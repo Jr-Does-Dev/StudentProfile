@@ -1,0 +1,236 @@
+* {
+    box-sizing: border-box;
+}
+
+header div {
+    padding: 3px;
+    background-color: rgb(22, 22, 22);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(156, 154, 154);
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(0, 0, 0);
+}
+
+#main {
+    display: flex;
+    flex-direction: row;
+}
+
+.layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: rgb(196, 192, 192);
+    padding: 3px;
+    margin: 5px;
+    width: 50%;
+    box-shadow: 3px 5px 10px rgb(82, 81, 81);
+}
+
+.images {
+    height: 50px;
+    width: 50px;
+}
+
+.courses {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.section-title {
+    color: rgb(196, 192, 192);
+    margin: 15px 10px 5px 10px;
+}
+
+th {
+    color: white;
+}
+
+td {
+    color: rgb(196, 192, 192);
+}
+
+table {
+    margin: 10px;
+    padding: 10px;
+    width: calc(100% - 20px);
+    background-color: rgb(24, 23, 23);
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid rgb(60, 60, 60);
+}
+
+img {
+    margin: 20px;
+    height: 400px;
+    width: 250px;
+}
+
+#info {
+    display: flex;
+    margin: 20px;
+    flex-direction: column;
+}
+
+#info span {
+    margin: 20px;
+}
+
+nav ul {
+    background-color: rgb(16, 14, 17);
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    box-shadow: 2px 2px 2px rgb(0, 0, 0);
+    padding: 0px;
+    margin: 0px;
+}
+
+nav {
+    margin: 0px;
+    padding: 0px;
+}
+
+nav ul li h4 {
+    padding: 0px;
+    margin: 3px;
+    color: white;
+}
+
+h4:hover {
+    cursor: pointer;
+    color: blue;
+}
+
+a {
+    text-decoration: none;
+}
+
+body:has(#about:target) nav a[href="#about"] h4 {
+    color: purple;
+}
+
+body:has(#courses:target) nav a[href="#courses"] h4 {
+    color: purple;
+}
+
+body:has(#main:target) nav a[href="#main"] h4 {
+    color: purple;
+}
+
+body:has(#contact:target) nav a[href="#contact"] h4 {
+    color: purple;
+}
+
+.target:target {
+    background-color: rgb(27, 27, 27);
+}
+
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 10px;
+    padding: 15px;
+    background-color: rgb(24, 23, 23);
+    box-shadow: 3px 5px 10px rgb(82, 81, 81);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    color: rgb(196, 192, 192);
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 8px;
+    background-color: rgb(16, 14, 17);
+    border: 1px solid rgb(60, 60, 60);
+    color: white;
+    font-family: inherit;
+}
+
+.contact-form button {
+    align-self: flex-start;
+    padding: 8px 20px;
+    background-color: purple;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: rgb(120, 0, 120);
+}
+
+
+footer {
+    background-color: rgb(22, 22, 22);
+    color: rgb(156, 154, 154);
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 3px;
+}
+
+
+@media (max-width: 768px) {
+    #main {
+        flex-direction: column;
+    }
+
+    .layout {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin: 5px 0;
+    }
+
+    #info {
+        margin: 10px;
+        align-items: center;
+    }
+
+    img {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form {
+        max-width: 100%;
+    }
+}

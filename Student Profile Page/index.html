@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile - University of Technology Jamaica</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <h2>University of Technology Jamaica / Student Page</h2>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="#main">
+                    <h4>Home</h4>
+                </a>
+            </li>
+            <li>
+                <a href="#about">
+                    <h4>About</h4>
+                </a>
+            </li>
+            <li>
+                <a href="#courses">
+                    <h4>Courses</h4>
+                </a>
+            </li>
+            <li>
+                <a href="#contact">
+                    <h4>Contact</h4>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="main" class="target">
+
+        <section id="about" class="layout target">
+            <div id="info">
+                <span>Student Name: Tung Tung Tung Sahur</span>
+                <span>Programme: Bachelors of Science in Computing</span>
+                <span>Year of Study: 1st Year</span>
+                <span>Short biography: Tung Tung Tung is a very studious person who is always on time and ensures
+                    that everything gets done in an orderly fashion.</span>
+            </div>
+            <div id="img">
+                <img src="1142-25-5-20-14-49-49m.jpg" alt="Photograph of Tung Tung Tung Sahur">
+            </div>
+        </section>
+
+        <section class="layout target" id="courses">
+            <div id="info">
+                <span>Courses</span>
+                <div class="courses">
+                    <img src="webdev.png" class="images" alt="Web Development course icon">
+                    <span>Web Development</span>
+                </div>
+                <div class="courses">
+                    <img src="ooop.png" class="images" alt="Object Oriented Programming course icon">
+                    <span>Object Oriented Programming</span>
+                </div>
+                <div class="courses">
+                    <img src="database-design.png" class="images" alt="Database Design course icon">
+                    <span>Database Design</span>
+                </div>
+                <div class="courses">
+                    <img src="physics_img.png" class="images" alt="Physics course icon">
+                    <span>Physics</span>
+                </div>
+                <div class="courses">
+                    <img src="statistics.png" class="images" alt="Introduction to Statistics course icon">
+                    <span>Introduction to Statistics</span>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section id="schedule" class="target">
+        <h3 class="section-title">Weekly Schedule</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Course</th>
+                    <th>Day</th>
+                    <th>Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Web Development</td>
+                    <td>Monday</td>
+                    <td>9:00 AM - 10:30 AM</td>
+                </tr>
+                <tr>
+                    <td>Object Oriented Programming</td>
+                    <td>Tuesday</td>
+                    <td>11:00 AM - 12:30 PM</td>
+                </tr>
+                <tr>
+                    <td>Database Design</td>
+                    <td>Wednesday</td>
+                    <td>1:00 PM - 2:30 PM</td>
+                </tr>
+                <tr>
+                    <td>Physics</td>
+                    <td>Thursday</td>
+                    <td>9:00 AM - 10:30 AM</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="contact" class="target">
+        <h3 class="section-title">Contact Me</h3>
+        <form action="#" method="post" class="contact-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message here..."
+                    required></textarea>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Tung Tung Tung Sahur</p>
+        <p>&copy; 2026 Tung Tung Tung Sahur. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
